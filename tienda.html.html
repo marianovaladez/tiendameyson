@@ -1,0 +1,116 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meyson - Tienda de Música</title>
+
+    <!-- Meta SEO -->
+    <meta name="description" content="Meyson es tu tienda de música, sonido y electrónica. Instrumentos, instalaciones profesionales, atención personalizada. Guadalupe, Zacatecas.">
+    <meta name="keywords" content="tienda de música, sonido, electrónica, instrumentos musicales, audio profesional, Zacatecas, Meyson">
+    <meta name="author" content="Meyson">
+    <meta name="robots" content="index, follow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+        .logo {
+            width: 1000px;
+        }
+        .text-black {
+            color: #0a0a0a; /* Negro más profundo */
+            font-size: 15px; /* Texto ligeramente más grande */
+        }
+        .highlight-green {
+            color: #32CD32;
+        }
+        .img-large {
+            width: 100%;
+            max-width: 1500px;
+            height: auto;
+        }
+    </style>
+    <script>
+        function openTab(tabId) {
+            document.querySelectorAll(".tab-content").forEach(tab => tab.classList.add("hidden"));
+            document.getElementById(tabId).classList.remove("hidden");
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-black">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-800 text-white p-6 shadow-lg">
+        <div class="container mx-auto flex justify-around">
+            <a onclick="openTab('tab1')" class="cursor-pointer hover:bg-blue-600 px-6 py-3 rounded transition text-lg font-semibold">Inicio</a>
+            <a onclick="openTab('tab2')" class="cursor-pointer hover:bg-blue-600 px-6 py-3 rounded transition text-lg font-semibold">Tienda</a>
+            <!-- Instalaciones oculto completamente -->
+            <a onclick="openTab('tab4')" class="cursor-pointer hover:bg-blue-600 px-6 py-3 rounded transition text-lg font-semibold">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Página Principal -->
+    <div id="tab1" class="tab-content container mx-auto text-center py-14">
+        <div class="flex justify-center">
+            <img src="logo meyson.jpg" alt="Logo Meyson" class="logo">
+        </div>
+        <h1 class="text-4xl font-bold mt-8 text-blue-800">Bienvenido a <span class="text-blue-700">Meyson</span></h1>
+        <p class="text-gray-600 mt-4 text-xl highlight-green">Tu tienda de música, electrónica y sonido favorita.</p>
+        <p class="text-gray-700 mt-6 text-lg leading-relaxed max-w-3xl mx-auto text-justify">
+            En <strong class="text-blue-800">Meyson</strong>, nos especializamos en la venta de <strong class="text-green-400">instrumentos musicales, equipos de sonido y productos de electrónica</strong> de alta calidad. 
+            Además, ofrecemos servicios de instalación profesional de equipos de sonido en iglesias, escuelas, auditorios y otros espacios públicos, garantizando una calidad de sonido excepcional para todo tipo de eventos. 
+            Nuestro equipo está comprometido en brindarte el mejor asesoramiento y soporte técnico para que disfrutes de una experiencia auditiva sin igual.
+        </p>
+    </div>
+
+    <!-- Tienda -->
+    <div id="tab2" class="tab-content hidden container mx-auto text-center py-14">
+        <div class="flex justify-center">
+            <img src="logo meyson.jpg" alt="Logo Meyson" class="logo">
+        </div>
+        <h2 class="text-4xl font-bold mb-8 text-blue-800">Tienda</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-5">
+            <img src="entrada.jpg" class="img-large rounded-lg shadow-2xl transform hover:scale-110 transition duration-500">
+            <img src="cables.jpg" class="img-large rounded-lg shadow-2xl transform hover:scale-110 transition duration-500">
+            <img src="centro.jpg" class="img-large rounded-lg shadow-2xl transform hover:scale-110 transition duration-500">
+            <img src="equipo.jpg" class="img-large rounded-lg shadow-2xl transform hover:scale-110 transition duration-500">
+            <img src="equipo 2.jpg" class="img-large rounded-lg shadow-2xl transform hover:scale-110 transition duration-500">
+            <img src="guitarras.jpg" class="img-large rounded-lg shadow-2xl transform hover:scale-110 transition duration-500">
+            <img src="guitarras2.jpg" class="img-large rounded-lg shadow-2xl transform hover:scale-110 transition duration-500">
+        </div>
+    </div>
+
+    <!-- Instalaciones (completamente oculto) -->
+    <div id="tab3" class="hidden"></div>
+
+    <!-- Contacto -->
+    <div id="tab4" class="tab-content hidden container mx-auto text-center py-14">
+        <div class="flex justify-center">
+            <img src="logo meyson.jpg" alt="Logo Meyson" class="logo">
+        </div>
+        <h2 class="text-4xl font-bold text-blue-800">Contáctanos</h2>
+        <p class="text-gray-600 mt-4 text-xl">Puedes comunicarte con nosotros a través de los siguientes medios:</p>
+        <div class="bg-white p-8 shadow-lg rounded-lg mt-8 mx-auto max-w-lg text-left">
+            <p class="text-lg font-semibold mb-2">📧 Email:</p>
+            <a href="mailto:ventasmeyson@outlook.com" class="text-blue-600 hover:underline block text-xl mb-4">ventasmeyson@outlook.com</a>
+            <p class="text-lg font-semibold mb-2">📞 Teléfonos:</p>
+            <p>
+                <a href="tel:+524921541144" class="text-blue-600 hover:underline text-xl block">492 154 1144</a>
+                <a href="tel:+524921094728" class="text-blue-600 hover:underline text-xl block">492 109 4728</a>
+            </p>
+            <p class="text-lg font-semibold mt-4">📍 Dirección:</p>
+            <p class="text-xl text-gray-800">40 B, Av José María Rodríguez, Guadalupe, Zacatecas</p>
+        </div>
+        <div class="mt-8">
+            <iframe class="w-full md:w-2/3 h-72 mx-auto rounded-lg shadow-lg"
+                src="https://www.google.com/maps/embed?pb=!4v1740601737967!6m8!1m7!1sG5nUcvj86DQqK9-DC7wJ_Q!2m2!1d22.74997142698151!2d-102.5217965374674!3f201.36402679357678!4f-9.608127867172456!5f0.7820865974627469"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
